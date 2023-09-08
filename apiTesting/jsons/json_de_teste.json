@@ -1,0 +1,29 @@
+{
+    "info":{
+       "version":"1.0.0",
+       "title":"Wikimedia REST API",
+       "license":{
+          "name":"Apache2",
+          "url":"http://www.apache.org/licenses/LICENSE-2.0"
+       },
+       "alias":[
+          "server1",
+          "server2",
+          "server3"
+       ]
+    },
+    "secrets":[
+       {
+          "name":"Secret Alpha",
+          "id":1
+       },
+       {
+          "name":"Secret Beta",
+          "id":2
+       },
+       {
+          "name":"Secret Gama",
+          "id":3
+       }
+    ]
+ } 
