@@ -1,3 +1,4 @@
+Básico
 Instalação 
     - pip install robotframework
     - pip install -U robotframework
@@ -26,4 +27,20 @@ WebDriver
     - Colocar os arquivos dentro da pasta mapeada nas variaveis de ambiente, e descompactar
         ex: C:\Users\Elton\AppData\Local\Programs\Python\Python311\Scripts\
 
-    
+Avançado
+    - Migração Python 3: Desinstalando o Python 2 (Windows 10)
+        1º - Abra "Painel de Controle > Programas > Programas e Recursos"
+        2º - Procure o Python 2 na lista e desinstale
+        3º - Abra "Painel de Controle > Sistema e Segurança > Sistema > Configurações Avançadas do Sistema"
+        4º - Vá em "Variáveis de Ambiente..."
+        5º - Procure pela seção "Variáveis do Sistema"
+        6º - Selecione "Path" e clique em "Editar..." e exclua os diretórios do Python 2
+    - Instalando Python 3
+        - Na instalação marcar a opção "add Python 0.0 to Path"
+        - Verificar versão "python --version"
+        - Listar bibliotecas python "pip freeze"
+        - Para atualizar "pip install -U robotframework"
+        - Para Web, atualizar os drives
+            - Chromedrive ex:
+                - O Chrome está atualizado Versão 116.0.5845.180 (Versão oficial) 64 bits
+                - Baixar Chromedrive
