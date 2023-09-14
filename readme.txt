@@ -27,6 +27,10 @@ WebDriver
     - Colocar os arquivos dentro da pasta mapeada nas variaveis de ambiente, e descompactar
         ex: C:\Users\Elton\AppData\Local\Programs\Python\Python311\Scripts\
 
+Rodar testes
+    - robot -d result -i ex_dateTime .\Robot_avancado\Libraries\
+    - robot -d result -t "nome do teste" operating_System.robot
+
 Avançado
     - Migração Python 3: Desinstalando o Python 2 (Windows 10)
         1º - Abra "Painel de Controle > Programas > Programas e Recursos"
