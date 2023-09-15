@@ -2,7 +2,7 @@
 Suite Teardown  Controlando o teardown da suite
 Test Teardown   Controlando o teardown do teste
 
-Test Tags    ex_teardown
+Test Tags    ex_teardowns
 
 *** Keywords ***
 ### SUITE TEARDOWNS

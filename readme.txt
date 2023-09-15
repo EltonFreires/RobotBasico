@@ -30,6 +30,7 @@ WebDriver
 Rodar testes
     - robot -d result -i ex_dateTime .\Robot_avancado\Libraries\
     - robot -d result -t "nome do teste" operating_System.robot
+    - robot -d result .\Robot_avancado
 
 Avançado
     - Migração Python 3: Desinstalando o Python 2 (Windows 10)

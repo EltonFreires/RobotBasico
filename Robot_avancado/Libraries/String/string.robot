@@ -3,6 +3,7 @@ Documentation   http://robotframework.org/robotframework/latest/libraries/String
 Library         String
 Library         OperatingSystem
 Test Tags       ex_strings
+Suite Teardown  Teardown suite ex_strings      
 
 *** Variables ***
 ${PATH_STRING}    ./Robot_avancado/Libraries/String
@@ -58,6 +59,7 @@ Substituindo valores no texto
     ${NOVO_TEXTO}   Replace String    string=${TEXTO}    search_for=Minha linha    replace_with=Conteúdo da minha linha
     Log             O velho texto era assim:\n${TEXTO}\nO novo texto ficou assim:\n${NOVO_TEXTO}
     Create File     ./my_files/meu_novo_arquivo.txt      ${NOVO_TEXTO}
+    # OBS: Ao final, o arquivo e apagado pelo teardown.
 
 Quero tudo minúsculo!
     ${TEXTO}        Pega arquivo
@@ -68,3 +70,7 @@ Quero tudo maiúsculo!
     ${TEXTO}        Pega arquivo
     ${TEXTO}        Convert To Uppercase    ${TEXTO}
     Log             Meu texto todo maiúsculo:\n${TEXTO}
+
+Teardown suite ex_strings
+    Remove File    ./my_files/meu_novo_arquivo.txt
+    Remove Directory    ./my_files
