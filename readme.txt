@@ -49,3 +49,16 @@ Avançado
             - Chromedrive ex:
                 - O Chrome está atualizado Versão 116.0.5845.180 (Versão oficial) 64 bits
                 - Baixar Chromedrive
+    - Banco de dados
+        Para PostgreSQL, segue o passo-a-passo:
+        01 - Baixe e instale o Banco de Dados (PostgreSQL) conforme o seu S.O.
+            - https://www.postgresql.org/download/
+            - Para Windows, pode ser a versão postgresql-12.0-1-windows-x64.exe (anexo nesta aula)
+        02 - Acesse o PGAdmin para gerenciar o Banco de Dados
+            - (Windows) Menu Iniciar -> pgAdmin4
+            OBS.: Para ver os aplicativos e configurações instaladas (Windows)
+            - C:\ProgramData\Microsoft\Windows\Start Menu\Programs\PostgreSQL 12
+            - C:\Program Files\PostgreSQL\12\data
+        03 - Para o Python (que roda abaixo do Robot) conseguir se comunicar com o PostgreSQL, vamos utilizar o driver psycopg2, para isso precisamos instalá-lo também:
+            - Documentação: https://pypi.org/project/psycopg2/
+            - pip install psycopg2
