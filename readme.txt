@@ -59,6 +59,13 @@ Avançado
             OBS.: Para ver os aplicativos e configurações instaladas (Windows)
             - C:\ProgramData\Microsoft\Windows\Start Menu\Programs\PostgreSQL 12
             - C:\Program Files\PostgreSQL\12\data
-        03 - Para o Python (que roda abaixo do Robot) conseguir se comunicar com o PostgreSQL, vamos utilizar o driver psycopg2, para isso precisamos instalá-lo também:
-            - Documentação: https://pypi.org/project/psycopg2/
-            - pip install psycopg2
+        03 - Instalar Library dataBaseLibrary
+            - Documentation   [14/10/2019] https://franz-see.github.io/Robotframework-Database-Library/api/1.2.2/DatabaseLibrary.html
+                Instale: "pip install -U robotframework-databaselibrary"
+        04 - Para acessar o BD o Robot precisa conhecer o DRIVER de cada banco, então precisamos instalar esse DRIVER também (instale apenas para o BD que você utiliza!)
+            Para: 
+                PostgreSQL: "pip install psycopg2", "pip install -U psycopg2" - Documentação: https://pypi.org/project/psycopg2/
+                SQLite 3: não precisa instalar nada!
+                MySQL: "pip install pymysql"
+                SQL Server: "pip install pymssql"
+                Oracle: "pip install cx-Oracle"
